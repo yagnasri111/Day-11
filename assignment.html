@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset >
+        <center>
+            <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+            <h1>GENERAL BUS PASS APPLICATION</h1>
+        </center>
+    </fieldset>
+    <form action="./loginresponse.html" method="get">
+        <fieldset>
+            <legend>Applicant Details</legend>
+        
+        <dl>
+            <dt>
+                <label for="name">Name</label>
+            </dt>
+            <dd>
+                <input type="text" name="name" id="name" pattern="[a-zA-Z]+{20,30}" required autofocus>
+            </dd>
+            <dt>
+                <label for="name">Father Name</label>
+            </dt>
+            <dd>
+                <input type="text" name="name" id="name" pattern="[a-zA-Z]+{20,30}" required autofocus>
+            </dd>
+            <dt>
+                <label for="phno">Aadhaar No</label>
+            </dt>
+            <dd>
+                <input type="number" name="phno" id="phno" pattern="/d+" required >
+            </dd>
+             <dt>
+                 <label for="email">E-mail Id</label>
+             </dt>
+             <dd>
+                 <input type="email" id="email" name="email" pattern="[a-zA-Z.-!]+" required>
+             </dd>
+             <dt>
+                 <label for="phno">Mobile No</label>
+             </dt>
+             <dd>
+                 <input type="number" name="phno" id="phno" pattern="/d+{0,10}" required >
+             </dd>
+             <dt>
+                 <label for="gender">Gender</label>
+             </dt>
+             <dd>
+                 <input type="radio" id="male" name="gender" value="MALE" required>
+                 <label for="male">Male</label>
+             </dd>
+             <dd>
+                 <input type="radio" id="female" name="gender" value="FEMALE" required>
+                 <label for="female">Female</label>
+             </dd>
+             <dt>
+                 <label for="dob">DOB</label>
+             </dt>
+             <dd>
+                 <input type="datetime-local" id="dob" name="DOB" required>
+             </dd>
+             <dt>
+                <label for="photo">Photo</label>
+             </dt>
+             <dd>
+                <input type="file" name="photo" id="photo" required accept=".jpg,.png" multiple placeholder="No file chosen">
+             </dd>
+        </dl>
+    </fieldset>
+    <fieldset>
+     <legend>
+        Address Details
+     </legend>
+     <dl>
+        <dt>
+            <label for="address">Address</label>
+        </dt>
+        <dd>
+            <textarea name="address" id="address"></textarea>
+        </dd>
+        <dt>
+            <label for="District">District</label>
+        </dt>
+        <dd>
+            <input type="text" name="District" id="District" required placeholder="Hyderabad">
+        </dd>
+         <dt>
+             <label for="mandal">Mandal</label>
+         </dt>
+         <dd>
+            <input type="text" name="mandal" id="mandal" required placeholder="Hyderabad">
+         </dd>
+         <dt>
+            <label for="village">Village</label>
+         </dt>
+<dd>
+    <input type="text" name="village" id="village" required placeholder="Hyderabad">
+</dd>
+        <dt>
+            <label for="pincode">Pincode</label>
+        </dt>
+        <dd>
+            <input type="number" name="pincode" id="pincode" pattern="/d+{0,6}" required>
+        </dd>
+
+</dl>
+    </fieldset>
+<fieldset>
+  <legend>
+    Pass Type Details
+  </legend>
+  <dl>
+    <dt>
+        <label for="city">City</label>
+    </dt>
+    <dd>
+        <input type="text" name="city" id="city" required placeholder="Hyderabad">
+    </dd>
+    <dt>
+        <label for="pass type">Pass Type</label>
+    </dt>
+    <dd>
+        <input type="search" name="pass type" id="pass type" required placeholder="-----Select----">
+    </dd>
+  </dl>
+</fieldset>
+<fieldset>
+<legend>
+    Mode of Payment & pass Collection
+</legend>
+<dl>
+<dt>
+    <label for="mode">Payment Mode</label>
+</dt>
+<dd>
+    <input type="text" name="mode" id="mode" placeholder="Select Payment Mode" required>
+</dd>
+<dt>
+    <label for="pass">Pass Delivery Mode</label>
+</dt>
+<dd>
+    <input type="text" name="pass" id="pass" placeholder="Select Pass Delivery Mode">
+</dd>
+<dt>
+    <label for="center">Center at which you want to Collect Pass</label>
+</dt>
+<dd>
+    <input type="text" name="center" id="center" placeholder="-----Select----" required>
+</dd>
+</dl>
+</fieldset>
+
+  <input type="submit" value="Register">
+     </form>
+ <a href="./login.html">Go Back</a>
+</body>
+</html>
